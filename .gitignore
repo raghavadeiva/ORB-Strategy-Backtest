@@ -1,0 +1,50 @@
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+*.egg
+
+# Environment / secrets
+.env
+.env.*
+*.key
+credentials.json
+config.json
+
+# Data caches — large parquet files (311MB total) excluded from repo
+data_cache/
+data_cache/*.parquet
+
+# Export outputs — generated backtest results and grid search artifacts
+exports/
+exports/**/*.csv
+
+# Log files
+*.log
+completed_jobs.log
+
+# Grid search summary — generated output
+grid_search_summary.csv
+sharpe_ratio_analysis.csv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
